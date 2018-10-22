@@ -65,6 +65,7 @@ endif
 LOCAL_CFLAGS += -Wno-macro-redefined
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 LOCAL_SRC_FILES := \
 	audio_hw.c \
@@ -425,6 +426,7 @@ ifneq ($(strip $(AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER)),false)
     LOCAL_CFLAGS += -DEXT_AMPLIFIER_ENABLED
     LOCAL_SRC_FILES += audio_extn/audio_amplifier.c
 endif
+
 
 LOCAL_CFLAGS += -Wall -Werror
 LOCAL_CLANG_CFLAGS += -Wno-unused-variable -Wno-unused-function -Wno-missing-field-initializers

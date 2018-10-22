@@ -49,6 +49,8 @@ LOCAL_HEADER_LIBRARIES := libhardware_headers \
                           libsystem_headers \
                           libutils_headers
 
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
+
 LOCAL_SHARED_LIBRARIES := \
         libcutils \
         liblog \
@@ -106,6 +108,8 @@ LOCAL_HEADER_LIBRARIES := libhardware_headers \
                           libsystem_headers \
                           libutils_headers
 
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
+
 LOCAL_SHARED_LIBRARIES := \
     liblog \
     libeffects
@@ -157,6 +161,8 @@ LOCAL_CFLAGS+= -O2 -fvisibility=hidden
 LOCAL_HEADER_LIBRARIES := libhardware_headers \
                           libsystem_headers \
                           libutils_headers
+
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 LOCAL_SHARED_LIBRARIES := \
         libcutils \
